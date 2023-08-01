@@ -9,9 +9,9 @@ metadata:
   name: gitea-tls
   namespace: gitea-repo
 spec:
-  commonName: git.tap.h2o-4-10940.h2o.vmware.com
+  commonName: git.tap.yldemotanzu.com
   dnsNames:
-  - git.tap.h2o-4-10940.h2o.vmware.com
+  - git.tap.yldemotanzu.com
   issuerRef:
     kind: ClusterIssuer
     name: local-issuer
@@ -23,9 +23,9 @@ metadata:
   name: gitea-ssh-tls
   namespace: gitea-repo
 spec:
-  commonName: git.tap.h2o-4-10940.h2o.vmware.com
+  commonName: git.tap.yldemotanzu.com
   dnsNames:
-  - git-ssh.tap.h2o-4-10940.h2o.vmware.com
+  - git-ssh.tap.yldemotanzu.com
   issuerRef:
     kind: ClusterIssuer
     name: local-issuer
@@ -104,7 +104,7 @@ spec:
     - name: gitea-service
       port: 3000
   virtualhost:
-    fqdn: git.tap.h2o-4-10940.h2o.vmware.com
+    fqdn: git.tap.yldemotanzu.com
     tls:
       secretName: git-tls
 ---
@@ -122,6 +122,6 @@ spec:
     - name: gitea-service
       port: 22
   virtualhost:
-    fqdn: git-ssh.tap.h2o-4-10940.h2o.vmware.com
+    fqdn: git-ssh.tap.yldemotanzu.com
     tls:
       secretName: git-ssh-tls

@@ -91,9 +91,9 @@ metadata:
   name: nexus-80-tls
   namespace: nexus
 spec:
-  commonName: nexus-80.tap.h2o-4-10940.h2o.vmware.com
+  commonName: nexus-80.tap.yldemotanzu.com
   dnsNames:
-  - nexus-80.tap.h2o-4-10940.h2o.vmware.com
+  - nexus-80.tap.yldemotanzu.com
   issuerRef:
     kind: ClusterIssuer
     name: local-issuer
@@ -113,7 +113,7 @@ spec:
     - name: nexus
       port: 80
   virtualhost:
-    fqdn: nexus-80.tap.h2o-4-10940.h2o.vmware.com
+    fqdn: nexus-80.tap.yldemotanzu.com
     tls:
       secretName: nexus-80-tls
 ---
@@ -123,9 +123,9 @@ metadata:
   name: nexus-8080-tls
   namespace: nexus
 spec:
-  commonName: nexus-8080.tap.h2o-4-10940.h2o.vmware.com
+  commonName: nexus-8080.tap.yldemotanzu.com
   dnsNames:
-  - nexus-8080.tap.h2o-4-10940.h2o.vmware.com
+  - nexus-8080.tap.yldemotanzu.com
   issuerRef:
     kind: ClusterIssuer
     name: local-issuer
@@ -145,6 +145,6 @@ spec:
     - name: nexus
       port: 80
   virtualhost:
-    fqdn: nexus-8080.tap.h2o-4-10940.h2o.vmware.com
+    fqdn: nexus-8080.tap.yldemotanzu.com
     tls:
       secretName: nexus-8080-tls

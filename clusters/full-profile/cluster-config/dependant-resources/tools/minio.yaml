@@ -51,7 +51,7 @@ spec:
         - name: MINIO_SECRET_KEY
           value: minio123
         - name: MINIO_BROWSER_REDIRECT_URL
-          value: https://minio-console.tap.h2o-4-10940.h2o.vmware.com
+          value: https://minio-console.tap.yldemotanzu.com
         ports:
         - containerPort: 9000
           hostPort: 9000
@@ -88,9 +88,9 @@ metadata:
   name: minio-tls
   namespace: minio
 spec:
-  commonName: minio.tap.h2o-4-10940.h2o.vmware.com
+  commonName: minio.tap.yldemotanzu.com
   dnsNames:
-  - minio.tap.h2o-4-10940.h2o.vmware.com
+  - minio.tap.yldemotanzu.com
   issuerRef:
     kind: ClusterIssuer
     name: local-issuer
@@ -102,9 +102,9 @@ metadata:
   name: minio-console-tls
   namespace: minio
 spec:
-  commonName: minio-console.tap.h2o-4-10940.h2o.vmware.com
+  commonName: minio-console.tap.yldemotanzu.com
   dnsNames:
-  - minio-console.tap.h2o-4-10940.h2o.vmware.com
+  - minio-console.tap.yldemotanzu.com
   issuerRef:
     kind: ClusterIssuer
     name: local-issuer
@@ -124,7 +124,7 @@ spec:
     - name: minio-service
       port: 9000
   virtualhost:
-    fqdn: minio.tap.h2o-4-10940.h2o.vmware.com
+    fqdn: minio.tap.yldemotanzu.com
     tls:
       secretName: minio-tls
 ---
@@ -142,6 +142,6 @@ spec:
     - name: minio-service
       port: 9001
   virtualhost:
-    fqdn: minio-console.tap.h2o-4-10940.h2o.vmware.com
+    fqdn: minio-console.tap.yldemotanzu.com
     tls:
       secretName: minio-console-tls
