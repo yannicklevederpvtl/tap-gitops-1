@@ -1,0 +1,17 @@
+gorkem/tmp-enc/key.txt
+gorkem/tmp-enc/tap-sensitive-values.yaml
+gorkem/tanzu-cluster-essentials/
+gorkem/tanzu-cluster-essentials-*.tgz
+tanzu-gitops-ri-*.tgz
+gorkem/values.yaml
+gorkem/ca.crt
+*.tgz
+*.tar
+*.sh
+*.txt
+kapp-controller-secret.yaml
+airgapped-files/*
+cert/*
+01-setup.sh
+00-airgapped-prep.sh
+setup-repo.sh
