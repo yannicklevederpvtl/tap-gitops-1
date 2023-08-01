@@ -1,7 +1,7 @@
 ---
 git:
-  url: https://github.com/gorkemozlu/tap-gitops-ri.git
+  url: https://github.com/yannicklevederpvtl/tap-gitops-1.git
   ref: origin/main
   sub_path: clusters/full-profile/cluster-config
 tap_package_repository:
-  oci_repository: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages
+  oci_repository: harbor.yldemotanzu.com/tap-packages/tap
